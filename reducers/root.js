@@ -5,6 +5,5 @@ import ingredientsReducer from './ingredients';
 const rootReducer = combineReducers({
 			recipes: recipesReducer,
 			ingredientes: ingredientsReducer});
-};
 
 export default rootReducer;

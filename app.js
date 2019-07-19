@@ -1,7 +1,9 @@
 import store from './store';
+import loadUI from './ui';
 import { addRecipe } from './actions/recipes';
 import { addIngredient } from './actions/ingredients';
 
+loadUI();
 store.subscribe(()=> console.log("Store Changed"));
 store.subscribe(() => console.log(store.getState()));
 
